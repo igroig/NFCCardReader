@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NFCCardReader</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="NFC_turned_off">NFC is tuned off</string>
+    <!--<string name="Not_NFC_Ability">this device doesn't support NFC</string>-->
+</resources>

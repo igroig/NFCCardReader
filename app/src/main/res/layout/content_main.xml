@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.gio.nfccardreader.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:visibility="gone"
+        android:background="@drawable/info_shape"
+        android:id="@+id/llInfo"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ll_info_height">
+
+
+        <TextView
+            android:textSize="@dimen/tvCardNumber_textSize"
+            android:textColor="@color/colorWhite"
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvCardNumber"
+            android:layout_marginTop="@dimen/tv_card_number_marginTop"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/tvExpiredDate_textSize"
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvExpiredDate"
+            app:layout_constraintLeft_toLeftOf="@+id/tvCardNumber"
+            android:layout_marginTop="@dimen/tvExpiredDate_margintTop"
+            app:layout_constraintTop_toBottomOf="@+id/tvCardNumber" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/ivLogo"
+            app:layout_constraintLeft_toRightOf="@+id/tvCardNumber"
+            app:layout_constraintBottom_toBottomOf="@+id/tvExpiredDate" />
+
+
+    </android.support.constraint.ConstraintLayout>
+    
+    <LinearLayout
+        android:id="@+id/llLogo"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        
+        <ImageView
+            android:background="@drawable/nfc"
+            android:id="@+id/ivNfc"
+            android:layout_width="@dimen/ivNfc_size"
+            android:layout_height="@dimen/ivNfc_size" />
+
+        <TextView
+            android:layout_marginBottom="100dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="place your card to the back of the device"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/tv_big_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        
+        
+    </LinearLayout>
+
+
+</LinearLayout>
+

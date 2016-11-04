@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ll_info_height">320dp</dimen>
+    <dimen name="tv_card_number_marginTop">96dp</dimen>
+    <dimen name="tvExpiredDate_margintTop">54dp</dimen>
+    <dimen name="tvCardNumber_textSize">20sp</dimen>
+    <dimen name="tvExpiredDate_textSize">19sp</dimen>
+    <dimen name="ivNfc_size">220dp</dimen>
+    <dimen name="tv_big_size">28sp</dimen>
+
+</resources>
